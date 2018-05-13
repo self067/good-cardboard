@@ -1,0 +1,61 @@
+.production
+	padding-top: 87px
+	padding-bottom: 20px
+	&-slider
+		&_top
+			margin-bottom: 13px
+			// height: 377px
+			overflow-y: hidden
+		&_bottom
+			padding-left: 30px
+			padding-right: 30px
+			overflow-y: hidden
+			img
+				filter: brightness(40%)
+				margin: 0 6px
+				outline: none
+				z-index: 2
+			div
+				div
+					position: relative
+					.slick-current
+						filter: brightness(100%)
+
+	&-text
+		&__title
+			margin-left: -30px
+			margin-bottom: 28px
+			margin-top: 19px
+			padding: 20px 185px 16px 29px
+			color: #ffffff
+			background-color: $active-color
+			// text-align: left
+			font-size: 28px
+			font-weight: 400
+			line-height: 22px
+				
+			&-mobile
+				display: none
+				margin-bottom: 17px
+				margin-top: 28px
+				padding: 20px 0
+				color: #ffffff
+				background-color: $active-color
+				text-align: center
+				font-size: 20px
+				text-transform: uppercase;
+				font-weight: 700;
+				line-height: 18px;
+
+		&__descr
+			text-align: justify
+			font-family: "Roboto Light", sans-serif
+			font-size: 16px
+			font-weight: 300
+			line-height: 24px
+			width: 100%
+			// max-width: 379px
+			div
+				margin-bottom: 10px
+		
+		

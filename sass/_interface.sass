@@ -1,0 +1,121 @@
+.section
+	&-title
+		font-family: "Roboto Bold", sans-serif
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 29px
+		&::after
+			content: ""
+			margin-top: 12px
+			display: block
+			height: 6px
+			background: url(../img/wavy-line.png) center no-repeat
+.button
+	background-color: $active-color
+	border: 1px solid transparent
+	color: $text-color-light
+	padding: 13px 22px
+	border-radius: 5px
+	&14
+		font-size: 14px
+	&15
+		font-size: 15px
+		
+	&:hover
+		background-color: lighten($active-color, 5)
+		cursor: pointer
+	img
+		vertical-align: middle
+	&_big
+		padding-top: 18px
+		padding-bottom: 18px
+		vertical-align: middle
+		// font-size: 15px
+	&-o
+		background-color: transparent
+		color: $text-color-dark
+		border: 1px solid rgba($text-color-dark, 0.5)
+		&:hover
+			color: $text-color-light
+			background-color: lighten($active-color, 5)
+			border: 1px solid transparent
+			cursor: pointer
+
+.slider-arrow
+	position: absolute
+	top: 0
+	width: 22px
+	height: 100%
+	z-index: 99
+	&_prod
+		border: 1px solid $active-color
+	// &_fb	
+	// 	width: 42px
+	&:hover
+		cursor: pointer
+	&_left
+		left: 0
+		background: #fff url(../img/arrow-left.png) center no-repeat
+		&:hover
+			background: $active-color url(../img/arrow-left_active.png) center no-repeat
+	&_right
+		right: 0 
+		background: #fff url(../img/arrow-right.png) center no-repeat
+		&:hover
+			background: $active-color url(../img/arrow-right_active.png) center no-repeat
+	&-big  
+		// font-size: 15px
+		// height: 80px
+		// top: 50%
+		// margin-top: -40px
+		&_left
+			left: 0
+			background: $bg-color-light url(../img/big-arrow-left.png) center no-repeat
+			&:hover
+				background: $bg-color-light url(../img/big-arrow-left_active.png) center no-repeat
+		&_right
+			right: 0
+			background: $bg-color-light url(../img/big-arrow-right.png) center no-repeat
+			&:hover
+				background: $bg-color-light url(../img/big-arrow-right_active.png) center no-repeat
+		&_prod
+		border: 1px solid $active-color
+	
+
+	&_mobile
+		height: 80px
+		top: 50%
+		margin-top: -40px
+		&:hover
+			cursor: default
+		&_left
+			left: 0
+			background: $active-color url(../img/arrow-left_active.png) center no-repeat
+			// &:hover
+			// 	border: 1px solid $active-color
+			// 	background: #fff url(../img/arrow-left.png) center no-repeat
+		&_right
+			right: 0 
+			background: $active-color url(../img/arrow-right_active.png) center no-repeat
+			// &:hover
+			// 	border: 1px solid $active-color
+			// 	background: #fff url(../img/arrow-right.png) center no-repeat
+
+//  Затемнение фона 
+.dark-bg	
+	position: relative
+	z-index: 2
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba( 0, 0, 0, 0.6)
+		z-index: -1
+
+	

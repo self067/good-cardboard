@@ -1,0 +1,561 @@
+
+
+@media (max-width: 1200px)  
+	.form
+ 		&__input
+   	flex-basis: 62%
+	.firstscreen
+		&-img
+			img
+			&::before
+				width: 350px
+				height: 350px
+	.menu
+		ul
+			li
+				padding-right: 15px
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 992px)  
+	.hidden-mobile
+		display: none
+		margin: 0
+		padding: 0
+
+	.header
+		margin-top: 0px
+		&-contacts
+			&__phone
+				&s
+					display: flex
+					flex-direction: column
+				font-size: 20px
+				margin-right: 13px
+				border: none
+	.firstscreen
+		padding-top: 55px
+    /* Затемнение фона */
+		&-text
+			text-align: center
+			&__title
+				font-size: 32px
+			&__subtitle
+				margin-bottom: 20px
+				font-size: 28px
+			&__form
+				padding: 10px  17px
+
+	.button_big
+		padding-left: 20px
+		padding-right: 20px
+	.form
+		justify-content: space-around
+		&-title
+			padding-right: 0
+		&-small
+			margin-left: 0
+	.popup
+		top: 40px
+		width: 80%
+		&-form
+			&-header
+				font-size: 28px
+				span
+					font-size: 22px
+			&__input
+				text-align: center
+				margin-bottom: 20px
+				padding-left: 0
+			&__btn
+				display: block
+				text-align: center
+				margin: auto
+	// .features
+	.numbers
+		&-block
+			&__title
+				font-size: 28px
+				sup
+					font-size: 18px
+
+	.features
+		&-block
+			flex-basis: 49%
+			margin-bottom: 10px
+			&__img
+				flex-basis: 50%
+				// margin-right: 2px
+
+	.products
+		&-block
+			margin-bottom: 35px
+			&__img	
+				margin-bottom: 19px
+			&__title
+				height: 50px
+				margin-bottom: 15px
+
+	.clients
+		&-img
+			&:hover
+				cursor: default
+			&01
+				background: url(../img/7.clients/pic01c.png) center no-repeat
+			&02
+				background: url(../img/7.clients/pic02c.png) center no-repeat
+			&03
+				background: url(../img/7.clients/pic03c.png) center no-repeat
+			&04
+				background: url(../img/7.clients/pic04c.png) center no-repeat
+			&05
+				background: url(../img/7.clients/pic05c.png) center no-repeat
+			&06
+				background: url(../img/7.clients/pic06c.png) center no-repeat
+			&07
+				background: url(../img/7.clients/pic07c.png) center no-repeat
+			&08
+				background: url(../img/7.clients/pic08c.png) center no-repeat
+			&09
+				background: url(../img/7.clients/pic09c.png) center no-repeat
+			&10
+				background: url(../img/7.clients/pic10c.png) center no-repeat
+			&11
+				background: url(../img/7.clients/pic11c.png) center no-repeat
+			&12
+				background: url(../img/7.clients/pic12c.png) center no-repeat
+
+	.button
+		&:hover
+			background-color: $active-color
+			cursor: default
+		&-o
+			&:hover
+				background-color: transparent
+				color: $text-color-dark
+				border: 1px solid rgba($text-color-dark, 0.5)
+
+
+	.slider-arrow
+		&:hover
+			cursor: default
+		&_left
+			&:hover
+				background: #fff url(../img/arrow-left.png) center no-repeat
+		&_right
+			&:hover
+				background: #fff url(../img/arrow-right.png) center no-repeat
+		&-big  
+			&_left
+				&:hover
+					background: $bg-color-light url(../img/big-arrow-left.png) center no-repeat
+			&_right
+				&:hover
+					background: $bg-color-light url(../img/big-arrow-right.png) center no-repeat
+	.products
+		padding-bottom: 35px
+
+	.production
+		&-text
+			&__title
+				// margin-left: -30px
+				margin-top: 0px
+			&__descr
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 18px;
+				// text-align-last: center
+	
+	.menu-ext
+		display: none
+		height: 0
+	.menu-link
+		display: block
+		left: 0px		
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 768px)  
+	.section
+		&-title
+			font-size: 22px
+			&::after
+				display: none
+
+	.menu-link
+		top: 6px
+
+	.hidden-mobile
+		display: none
+	.header
+		margin-top: 0
+		padding: 10px 0
+		background-color: #f4f4f4
+		&__logo
+			background: $active-color url(../img/1.header/logo-mobile.png) center no-repeat
+			width: 45px
+			height: 45px
+			border-radius: 4px
+			margin: 0
+			padding: 0
+		&-contacts
+			&__phone
+				margin-left: 0
+				text-align: left
+				&s
+					flex-direction: row
+					margin-right: 15px
+				font-size: 14px
+				margin-right: 40px
+				border: none
+			&__button
+				display: inline-block
+				padding: 5px
+				width: 45px
+				height: 45px
+	.firstscreen
+		padding-top: 50px
+		padding-bottom: 38px
+		
+		text-align: center
+		&-text
+			&__title
+				font-size: 28px
+				color: $active-color
+			&__subtitle
+				font-size: 24px
+			&__form
+				background-color: transparent
+	.form
+		display: flex
+		flex-direction: column
+		align-items: center
+		&-title
+			padding-right: 0
+			font-size: 17px
+			line-height: 1.4
+			&__important
+				margin-top: 12px
+		&__input
+			margin-bottom: 25px
+			margin-left: auto //0px
+			margin-right: auto //0px
+			text-align: center
+			min-width: 70%
+		&-small
+			margin-left: 0
+	.mobile-bold
+		font-weight: bold
+	.popup
+		top: 30px
+		&-form
+			&-header
+				font-size: 26px
+				span
+					font-size: 20px
+			&__label
+				font-size: 16px
+			&__input
+				width: 100%
+
+	.numbers
+		&-block
+			display: block
+			width: 100%
+			margin-bottom: 24px
+			&__title
+				font-size: 36px
+				sup
+					font-size: 22px
+			&__text
+				font-size: 16px
+
+	.features
+		padding-bottom: 34px
+		padding-top: 24px
+		&-block
+			flex-basis: 100%
+			margin-bottom: 10px
+			padding: 22px 20px
+			&__img
+				min-width: 85px
+				flex-basis: 20%
+				// flex-basis: 40%
+				padding-right: 10px
+				margin-right: 0px
+
+	.products
+		padding-top: 35px
+		padding-bottom: 13px
+		&-block
+			margin-bottom: 35px
+			text-align: center
+			&__img	
+				margin-bottom: 19px
+			&__title
+				height: 40px
+				margin-bottom: 20px
+			&__button
+				font-size: 14px
+				&2
+					font-size: 14px
+
+
+	.production
+		padding-top: 0px
+		// padding-top: 28px
+		margin-bottom: 0
+		padding-bottom: 0px
+		&-slider_bottom
+			display: none
+		&-text
+			margin-bottom: 22px
+			&__title
+				display: none
+				margin-left: 0
+				padding: 20px 0
+				text-align: center
+				font-size: 20px
+				text-transform: uppercase;
+				font-weight: 700;
+				line-height: 18px;
+				&-mobile
+					display: block
+			&__descr
+				text-align-last: center
+	
+	.clients
+		margin-bottom: 20px
+		margin-top: 0px
+		padding-top: 40px
+		&-img
+			margin-bottom: 10px
+	
+	.feedback
+		padding-top: 36px
+		padding-bottom: 40px
+
+	.offer
+		padding-top: 50px
+		padding-bottom: 50px
+		&-title
+			font-size: 28px
+			&_subtitle
+				font-size: 24px
+		&-form
+			&__label
+				font-size: 14px;
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 576px)
+	.header
+		&__logo
+			width: 35px
+			height: 35px
+		&-contacts
+			&__phone
+				&s
+					display: flex
+					flex-direction: column
+				font-size: 14px
+				margin-right: 13px
+        // &:first-child
+        //   border-right: none
+				border: none
+			&__button
+				width: 35px
+				height: 35px
+				display: inline-block
+
+			&__vline
+				// display: none
+				padding-right: 0
+				
+	.firstscreen
+		text-align: center
+		&-text
+			&__title
+				font-size: 22px
+				margin-bottom: 7px
+			&__subtitle
+				font-size: 18px
+				margin-bottom: 40px
+			&__form
+				background-color: transparent
+	.form
+		margin-bottom: 16px
+		&-title
+			padding-right: 0
+			font-size: 15px
+			line-height: 1.4
+			&__important
+				margin-top: 10px
+		&__input
+			margin-bottom: 13px
+			// margin-right: 0
+	.popup
+		&-form
+			padding: 10px 20px 10px 20px
+			&-header
+				font-size: 20px
+				span
+					font-size: 14px
+			&__label
+				margin-top: 10px
+				font-size: 16px
+
+
+	.offer
+		&-title
+			margin-bottom: 30px
+			font-family: "Roboto Bold", sans-serif
+			font-weight: 700;
+			font-size: 20px
+			&_subtitle
+				font-family: "Roboto", sans-serif
+				font-weight: 400;
+				font-size: 16px
+
+	// .contacts-blocks
+		// display: none
+	// .map
+	// 	width: 100%-30px	
+	.contacts
+		margin-bottom: 15px
+		margin-right: 15px
+		margin-left: 15px
+		
+		position: relative
+		&-block
+			display: block
+			text-align: center
+			&s
+				// z-index: 1
+				top: 10%
+				left: 10%
+
+				text-align: center
+				position: static  
+		
+				padding-top: 19px
+				padding-bottom: 12px
+			&__title
+				margin-bottom: 7px
+				margin-top: 0
+				font-family: "Roboto Medium", sans-serif;
+				font-size: 18px;
+				font-weight: 500;
+			&__mbdop	
+				margin-top: 20px
+			&__text
+				margin-bottom: 30px
+				font-size: 14px;
+				line-height: 18px;
+				font-family: "Roboto Light", sans-serif;;
+				font-weight: 300;
+			&__cta
+				text-align: center
+		&-img
+			display: none
+		&-mobile
+			display: block
+
+	.map
+		height: 420px
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 480px)
+	
+	.menu-link
+		left: 2px
+	
+	.popup
+		&-title
+			font-size: 16px
+		&-form
+			padding-top: 5px
+			&-header
+				margin-top: 0
+				// font-size: 18px
+			&__input
+				// font-size: 12px
+			&__btn
+				width: 100%
+				margin-left: 0
+				// padding-top: 2px
+				// font-size: 14px
+			&__label
+				// font-size: 12px
+
+	.features
+		&-block
+			padding: 20px 5px
+			&__img
+				min-width: 80px
+				flex-basis: 20%
+				padding-right: 0px
+
+	.products
+		&-block
+			&__img	
+				margin-bottom: 12px
+			&__title
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 20px;
+
+	.section
+		&-title
+			font-size: 22px
+
+	.clients
+		&-img
+			background-size: 50%
+			padding: 0px 0px
+			&:hover
+				background-size: 50%
+
+	.footer
+		&-text
+			font-size: 11px;
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+@media (max-width: 360px)
+	.menu-link
+		left: 0px
+	
+	.popup
+		top: 30px
+		width: 85%
+		&-form
+			padding: 20px 10px 
+	.header
+		// display: flex
+		&-contacts
+			&__phone
+				font-size: 12px
+				margin-right: 0px
+
+	.products
+		&-block
+			&__button
+				margin-right: 4px
+
+	// .button
+	// 	padding: 13px 18px
+				
+	.clients
+		&-img
+			// background-size: auto
+			min-height: 87px
